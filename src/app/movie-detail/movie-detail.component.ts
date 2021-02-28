@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-movie-detail',
@@ -8,13 +8,16 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class MovieDetailComponent implements OnInit {
 
+  public movieId;
   public movieData;
 
-  constructor() {
+  constructor(private activatedRoute: ActivatedRoute) {
   }
 
   ngOnInit() {
-    this.movieData = history.state
-  }
+    this.movieData = history.state // to access data of movie
+    this.movieId = this.activatedRoute.snapshot.params.id; // to access params
 
+    console.log("Params movieId", this.movieId);
+  }
 }

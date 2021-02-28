@@ -11,17 +11,14 @@ export class DCMoviesComponent implements OnInit {
     {
       id: "1",
       name: "THE DARK KNIGHT",
-      release_date: "2008"
     },
     {
       id: "2",
       name: "MAN OF STEEL",
-      release_date: "2013"
     },
     {
       id: "3",
       name: "WONDER WOMAN",
-      release_date: "2011"
     }
   ]
 

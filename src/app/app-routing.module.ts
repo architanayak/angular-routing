@@ -24,7 +24,7 @@ const routes: Routes = [
         component: MarvelMoviesComponent
       },
       {
-        path: ':name',
+        path: ':id',
         component: MovieDetailComponent
       }
     ]
@@ -37,7 +37,7 @@ const routes: Routes = [
         component: DCMoviesComponent,
       },
       {
-        path: ':name',
+        path: ':id',
         component: MovieDetailComponent
       }
     ]

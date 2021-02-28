@@ -8,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 export class MarvelMoviesComponent implements OnInit {
 
   public movies = [
-    { name: "CAPTAIN AMERICA: THE FIRST AVENGER" , id: "1"},
-    { name: "DOCTOR STRANGE" , id: "2"},
-    { name: "IRON MAN" , id: "3"}
+    {
+      id: "1",
+      name: "CAPTAIN AMERICA: THE FIRST AVENGER",
+    },
+    {
+      id: "2",
+      name: "DOCTOR STRANGE",
+    },
+    {
+      id: "3",
+      name: "IRON MAN",
+    }
   ]
   constructor() { }
 

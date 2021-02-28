@@ -17,7 +17,7 @@ import { MovieDetailComponent } from './movie-detail/movie-detail.component';
     PageNotFoundComponent,
     MarvelMoviesComponent,
     DCMoviesComponent,
-    MovieDetailComponent
+    MovieDetailComponent,
   ],
   imports: [
     BrowserModule,
