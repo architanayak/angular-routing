@@ -17,6 +17,12 @@ const routes: Routes = [
     component: HomeComponent,
   },
   {
+    path: 'lazy-loading',
+    loadChildren: () => import('./lazy-loading/lazy-loading.module')
+      .then(m => m.LazyLoadingModule)
+  },
+
+  {
     path: 'marvel-movies',
     children: [
       {
